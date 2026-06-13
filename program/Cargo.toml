@@ -1,0 +1,18 @@
+[package]
+name = "fibonacci-program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { version = "1.0.0", features = ["verify"] }
+
+[lib]
+crate-type = ["lib"]
+name = "fibonacci_program"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+debug = false
+strip = true

@@ -1,19 +1,6 @@
-# Dependencies
-node_modules/
-__pycache__/
-*.pyc
 target/
-Cargo.lock
-
-# Environment
+out/
+program/elf/
 .env
-.env.local
-
-# Build
-dist/
-build/
 *.log
-
-# OS
 .DS_Store
-Thumbs.db
